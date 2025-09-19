@@ -1,0 +1,33 @@
+/* Header styles for Community Directory */
+.headerContainer {
+  max-width: 48rem;
+  margin: 5rem auto 2.5rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.headerTitle {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #f6f7f8;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  line-height: 1.1;
+}
+@media (min-width: 640px) {
+  .headerTitle {
+    font-size: 3.5rem;
+  }
+}
+.headerSubtitle {
+  margin-top: 1.25rem;
+  font-size: 1.2rem;
+  color: #b0b8c1;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.dark .headerTitle {
+  color: #f6f7f8;
+}
+.dark .headerSubtitle {
+  color: #b0b8c1;
+}

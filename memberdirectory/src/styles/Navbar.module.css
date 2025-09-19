@@ -1,0 +1,133 @@
+/* Navbar styles for Community Directory */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 50;
+  border-bottom: 1px solid #1a2730;
+  background: #101c22;
+  margin-bottom: 0;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+}
+.dark .navbar {
+  border-bottom: 1px solid #1a2730;
+  background: #101c22;
+}
+.navbarInner {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  min-height: 64px;
+}
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #13a4ec;
+}
+.siteTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #13a4ec;
+}
+.navLinks {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+.navLink {
+  color: #f6f7f8;
+  transition: color 0.2s;
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  outline: none;
+}
+.navLink:hover,
+.navLink:focus {
+  color: #13a4ec;
+  background: #16232c;
+  text-decoration: underline;
+}
+.dark .navLink {
+  color: #f6f7f8;
+}
+.dark .navLink:hover,
+.dark .navLink:focus {
+  color: #13a4ec;
+  background: #16232c;
+  text-decoration: underline;
+}
+.searchBox {
+  display: none;
+}
+@media (min-width: 640px) {
+  .searchBox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    background: #16232c;
+    padding: 0 0.75rem;
+  }
+}
+.searchIcon {
+  color: #13a4ec;
+}
+.dark .searchIcon {
+  color: #13a4ec;
+}
+.searchInput {
+  background: transparent;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  outline: none;
+  color: #f6f7f8;
+  width: 8rem;
+}
+.dark .searchInput {
+  color: #f6f7f8;
+}
+
+.profileButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: background 0.2s;
+  background: #16232c;
+  border: none;
+  cursor: pointer;
+}
+.profileButton:hover {
+  background: #13a4ec;
+}
+.dark .profileButton:hover {
+  background: #13a4ec;
+}
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #13a4ec;
+}

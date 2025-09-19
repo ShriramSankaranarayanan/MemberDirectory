@@ -1,0 +1,262 @@
+/* Modal redesign styles */
+.modalHeaderBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(90deg, #13a4ec 0%, #16232c 100%);
+  opacity: 0.18;
+  z-index: 0;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.modalContent {
+  background: #16232c;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+  color: #f6f7f8;
+  overflow: visible;
+}
+.modalHeaderSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.modalAvatarWrap {
+  position: relative;
+  margin-top: -4rem;
+  margin-bottom: 0.5rem;
+}
+.modalAvatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+.modalName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.modalDob {
+  font-size: 1rem;
+  color: #b0b8c1;
+  margin-bottom: 0.25rem;
+}
+.modalParents {
+  font-size: 0.95rem;
+  color: #b0b8c1;
+}
+.modalDetailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.modalGridFull {
+  grid-column: span 2;
+}
+.modalLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b0b8c1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.modalValue {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f6f7f8;
+  margin-top: 0.2rem;
+}
+.modalSocialRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.iconSocial {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #13a4ec;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: opacity 0.2s;
+}
+.iconSocial:hover {
+  opacity: 0.8;
+}
+/* Modal styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modalContent {
+  background: #16232c;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+  color: #f6f7f8;
+}
+.modalClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #b0b8c1;
+  cursor: pointer;
+}
+.modalAvatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto 1.5rem auto;
+}
+.modalName {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.modalDetails {
+  text-align: left;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #b0b8c1;
+}
+.modalDetails p {
+  margin: 0.5rem 0;
+}
+.memberListInfo .memberName,
+.memberListInfo .memberOccupation {
+  text-align: left;
+}
+.memberCard .memberName,
+.memberCard .memberOccupation {
+  text-align: center;
+}
+/* List view styles */
+.memberListItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #1a2730;
+}
+
+.memberListItem .memberAvatar {
+  /* margin-left: auto; */ /* Commenting out instead of removing for clarity */
+}
+
+.memberListInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+.memberListInfo .memberName {
+  text-align: left;
+}
+.memberListInfo .memberOccupation {
+  text-align: left;
+}
+
+/* MemberDirectory styles for Community Directory */
+.memberGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .memberGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .memberGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .memberGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  background: #16232c;
+  border-radius: 1rem;
+  padding: 1.5rem 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.memberAvatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+}
+.memberName {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #f6f7f8;
+  text-align: right;
+}
+.memberOccupation {
+  font-size: 0.8rem;
+  color: #b0b8c1;
+}
+.dark .memberCard {
+  background: #16232c;
+}
+.dark .memberName {
+  color: #f6f7f8;
+}
+.dark .memberOccupation {
+  color: #b0b8c1;
+}

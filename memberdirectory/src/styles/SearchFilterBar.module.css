@@ -1,0 +1,102 @@
+/* SearchFilterBar styles for Community Directory */
+.searchFilterBar {
+  margin-bottom: 2rem;
+}
+.searchInputWrapper {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(16, 28, 34, 0.05);
+}
+/* Align search icon with dropdown arrow */
+.searchIcon {
+  pointer-events: none;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #b0b8c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark .searchIcon {
+  color: #b0b8c1;
+}
+.searchInput {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  font-size: 1rem;
+  outline: none;
+}
+.dark .searchInput {
+  background: rgba(0, 0, 0, 0.2);
+}
+.filterButtons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.filterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: #16232c;
+  color: #f6f7f8;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.filterButton:hover,
+.filterButton:focus {
+  background: #223344;
+  color: #13a4ec;
+  outline: none;
+}
+.dark .filterButton {
+  background: rgba(0, 0, 0, 0.2);
+}
+.dark .filterButton:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+select.filterButton {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #16232c;
+  color: #f6f7f8;
+  border: none;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.filterButtonWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownArrow {
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #b0b8c1;
+}
+select.filterButton:focus {
+  outline: 2px solid #13a4ec;
+}

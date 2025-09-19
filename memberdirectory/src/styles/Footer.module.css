@@ -1,0 +1,49 @@
+/* Footer styles for Community Directory */
+.footer {
+  border-top: 1px solid #1a2730;
+  margin-top: 2.5rem;
+  background: #101c22;
+}
+.footerInner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footerInner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footerText {
+  font-size: 0.875rem;
+  color: #b0b8c1;
+}
+.footerLinks {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.footerLink {
+  color: #b0b8c1;
+  transition: color 0.2s;
+}
+.footerLink:hover {
+  color: #13a4ec;
+}
+.dark .footer {
+  border-top: 1px solid #1a2730;
+  background: #101c22;
+}
+.dark .footerText,
+.dark .footerLink {
+  color: #b0b8c1;
+}
+.dark .footerLink:hover {
+  color: #13a4ec;
+}
